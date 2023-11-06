@@ -56,13 +56,13 @@ timedLoop(5000, function() {
   });
 });
 onEvent("send", "click", function( ) {
-  if (!(rank == "banned")) {
+  if (rank != "banned") {
     sendmessage("public", getText("text_input1"));
     setText("text_input1", "")
   }
 });
 onEvent("button28", "click", function( ) {
-  if (!(rank == "banned")) {
+  if (rank != "banned") {
     sendmessage(getText("text_input9"), getText("text_input10"));
     setText("text_input1", "")
   }
